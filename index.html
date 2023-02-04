@@ -4,10 +4,137 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Project</title>
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1>Hello Reeva</h1>
+    <div class="app">
+      <div class="menu-toggle">
+        <div class="hamburger">
+          <span></span>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <h3>Dashboard</h3>
+
+        <nav class="menu">
+          <a href="#" class="menu-item is-active">Home</a>
+          <a href="#" class="menu-item">Profile</a>
+          <a href="#" class="menu-item">Messages</a>
+          <a href="#" class="menu-item">History</a>
+          <a href="#" class="menu-item">Tasks</a>
+          <a href="#" class="menu-item">Communities</a>
+
+          <br />
+
+          <a href="#" class="menu-item">Settings</a>
+          <a href="#" class="menu-item">Support</a>
+          <a href="#" class="menu-item">Privacy</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <h4>Hi There,</h4>
+        <p><strong>Matthias (@matthias)</strong></p>
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+
+        <section class="your-projects">
+          <h3>Your Projects</h3>
+          <div class="project-grid">
+            <div class="project">
+              <h4>Project 1</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                asperiores nihil aperiam sit voluptatibus provident ea optio nam
+                neque maiores, repellendus impedit laudantium aspernatur atque
+                voluptatum, molestiae blanditiis quos numquam?
+              </p>
+              <div class="project-icons">
+                <i class="fa-solid fa-chart-line"></i>
+                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-cog"></i>
+              </div>
+            </div>
+            <div class="project">
+              <h4>Project 2</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                asperiores nihil aperiam sit voluptatibus provident ea optio nam
+                neque maiores, repellendus impedit laudantium aspernatur atque
+                voluptatum, molestiae blanditiis quos numquam?
+              </p>
+              <div class="project-icons">
+                <i class="fa-solid fa-chart-line"></i>
+                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-cog"></i>
+              </div>
+            </div>
+            <div class="project">
+              <h4>Project 3</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                asperiores nihil aperiam sit voluptatibus provident ea optio nam
+                neque maiores, repellendus impedit laudantium aspernatur atque
+                voluptatum, molestiae blanditiis quos numquam?
+              </p>
+              <div class="project-icons">
+                <i class="fa-solid fa-chart-line"></i>
+                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-cog"></i>
+              </div>
+            </div>
+            <div class="project">
+              <h4>Project 4</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                asperiores nihil aperiam sit voluptatibus provident ea optio nam
+                neque maiores, repellendus impedit laudantium aspernatur atque
+                voluptatum, molestiae blanditiis quos numquam?
+              </p>
+              <div class="project-icons">
+                <i class="fa-solid fa-chart-line"></i>
+                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-cog"></i>
+              </div>
+            </div>
+            <div class="project">
+              <h4>Project 5</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                asperiores nihil aperiam sit voluptatibus provident ea optio nam
+                neque maiores, repellendus impedit laudantium aspernatur atque
+                voluptatum, molestiae blanditiis quos numquam?
+              </p>
+              <div class="project-icons">
+                <i class="fa-solid fa-chart-line"></i>
+                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-cog"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const menu_toggle = document.querySelector(".menu-toggle");
+      const sidebar = document.querySelector(".sidebar");
+
+      menu_toggle.addEventListener("click", () => {
+        menu_toggle.classList.toggle("is-active");
+        sidebar.classList.toggle("is-active");
+      });
+    </script>
   </body>
 </html>
